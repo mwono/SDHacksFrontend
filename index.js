@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 app.use(cors(corsOptions))
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(__dirname + '/dist/frontend'));
 
 app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/dist/frontend/index.html'));
