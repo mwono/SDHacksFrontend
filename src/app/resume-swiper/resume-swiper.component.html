@@ -10,16 +10,16 @@
   <h2>
     Quota progress: {{ judged }} / {{ quota }}
   </h2>
-  <h3 *ngIf="selectedUser">
-    {{ selectedUser.name }}'s GPA {{ selectedUser.GPA }} and graduation year {{ selectedUser.gradYear }}
+  <h3 *ngIf="selectedApplicant">
+    {{ selectedApplicant.name }}'s GPA {{ selectedApplicant.GPA }} and ID {{ selectedApplicant.ID }}
   </h3>
   </div>
   <div class="row">
       <div *ngFor="let r of rejected">
         <img class="Rejections" [src]="r.ResumeLink">
       </div>
-      <div *ngIf="selectedUser as variable">
-        <img class="Undecided" [src]="selectedUser.ResumeLink">
+      <div *ngIf="selectedApplicant as variable">
+        <img class="Undecided" [src]="selectedApplicant.ResumeLink">
       </div>
       <div *ngFor="let a of accepted">
         <img class="Accepted" [src]="a.ResumeLink">

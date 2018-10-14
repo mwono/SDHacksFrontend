@@ -7,7 +7,7 @@ import { RecruitingDetailsComponent } from './recruiting-details/recruiting-deta
 const routes: Routes = [
 	{ path: 'swiper', component: ResumeSwiperComponent },
 	{ path: 'details/:job', component: RecruitingDetailsComponent},
-	{path: '', redirectTo: '/swiper', pathMatch: 'full'}
+	{ path: '', redirectTo: '/swiper', pathMatch: 'full'}
 ];
 
 @NgModule({

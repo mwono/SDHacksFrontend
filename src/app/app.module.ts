@@ -20,7 +20,7 @@ import { RecruitingDetailsComponent } from './recruiting-details/recruiting-deta
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    routingModule,
+    routingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

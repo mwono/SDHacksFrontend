@@ -7,23 +7,23 @@
     </ul>
 </nav>
 
-<table class="table" *ngFor="let user of users">
+<table class="table" *ngFor="let Applicant of Applicants">
 	<thead>
 		<tr>
+			<th scope="col">ID</th>
 			<th scope="col">Name</th>
 			<th scope="col">GPA</th>
-			<th scope="col">Graduation Year</th>
 			<th scope="col">Resume</th>
-			<th scope="col">Status</th>
+			<th scope="col">Applied To</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="row">{{ user.name }}</th>
-			<td>{{ user.GPA }}</td>
-			<td>{{ user.gradYear }}</td>
-			<td class="col imag"><img [src]="user.ResumeLink"></td>
-			<td>{{ user.status }}</td>
+			<th scope="row">{{ Applicant.ID }}</th>
+			<td>{{ Applicant.Name }}</td>
+			<td>{{ Applicant.GPA }}</td>
+			<td class="col imag"><img [src]="Applicant.ResumeLink"></td>
+			<td>{{ Applicant.status }}</td>
 		</tr>
 	</tbody>
 </table>
