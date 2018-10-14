@@ -5,7 +5,7 @@ button {
 img.Undecided { 
 	margin-left: auto;
 	margin-right: auto;
-	width: 30%;
+	width: 35%;
 	
 	position: absolute;
 	left: 0px;
@@ -20,7 +20,7 @@ img.Rejections {
     animation-name: rejected;
     animation-duration: .2s;
     animation-timing-function: linear;
-	width: 30%;
+	width: 35%;
 
 	right: 68%;
 }
@@ -33,7 +33,7 @@ img.Accepted {
     animation-name: accepted;
     animation-duration: .2s;
     animation-timing-function: linear;
-	width: 30%;
+	width: 35%;
 
 	left: 68%;
 }
