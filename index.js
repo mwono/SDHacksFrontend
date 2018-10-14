@@ -3,7 +3,6 @@ const path = require('path');
 
 const app = express();
 
-app.use(cors(corsOptions))
 app.use(express.static(__dirname + '/dist/frontend'));
 
 app.get('/*', (req, res) => {
