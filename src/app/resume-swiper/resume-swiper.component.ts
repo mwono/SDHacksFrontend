@@ -84,7 +84,7 @@ export class ResumeSwiperComponent {
   undo(): void {
   	this.totalJudged--;
   	let undone = this.viewed.pop();
-  	if (this.accepted.find(user => user.name == undone.name)) {
+  	if (this.accepted.find(user => user.Name == undone.Name)) {
   		this.accepted.pop();
       if (this.judged > 0) {
         this.judged--;
@@ -104,7 +104,7 @@ export class ResumeSwiperComponent {
   	var code = event.code;
   	if (code == "ArrowLeft" || code == "ArrowRight") {
   	  if (this.totalJudged < this.applicants.length) {
-	    if (!this.viewed.find(user => user.name == this.selectedApplicant.name)) {
+	    if (!this.viewed.find(user => user.Name == this.selectedApplicant.Name)) {
 		  this.viewed.push(this.selectedApplicant);
 	  	if (code == "ArrowLeft") {
 	  	  this.rejectResume();
